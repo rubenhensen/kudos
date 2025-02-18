@@ -17,6 +17,9 @@ jobs:
           run: npm run e2e
         env:
           # pass GitHub token to allow accurately detecting a build vs a re-run build
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          STRAVA_USERNAME: ${{ secrets.STRAVA_USERNAME }}
-          STRAVA_PW: ${{ secrets.STRAVA_PW }}
+          env:
+          CYPRESS_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          env:
+          CYPRESS_STRAVA_USERNAME: ${{ secrets.CYPRESS_STRAVA_USERNAME }}
+          env:
+          CYPRESS_STRAVA_PW: ${{ secrets.CYPRESS_STRAVA_PW }}
