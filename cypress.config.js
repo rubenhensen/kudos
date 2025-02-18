@@ -2,8 +2,8 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   env: {
-    STRAVA_USERNAME: 'ruben.hensen@pm.me',
-    STRAVA_PW: 'YSp5DNftY^g%3P',
+    STRAVA_USERNAME: '',
+    STRAVA_PW: '',
   },
   e2e: {
     setupNodeEvents(on, config) {
